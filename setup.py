@@ -1,9 +1,9 @@
 from setuptools import setup, Extension
 
-module = Extension(name="first_extension",sources=["first_extension.cpp"])
+module = Extension(name="PyCPBoost",sources=["PyCPBoost.cpp"])
 
 setup(
-    name="first_extension",
+    name="PyCPBoost",
     version=1.0,
     description="My First C++ Package",
     ext_modules=[module]

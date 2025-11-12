@@ -55,16 +55,16 @@ extern "C"{
         {NULL, NULL, 0, NULL}
     };
 
-    static struct PyModuleDef first_extension
+    static struct PyModuleDef PyCPBoost
     {
         PyModuleDef_HEAD_INIT,
-        "first_extension",
+        "PyCPBoost",
         "a simple C++ extension example",
         -1,
         MyModuleMethods
     };
 
-    PyMODINIT_FUNC PyInit_first_extension(void){
-        return PyModule_Create(&first_extension);
+    PyMODINIT_FUNC PyInit_PyCPBoost(void){
+        return PyModule_Create(&PyCPBoost);
     }
 }

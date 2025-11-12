@@ -23,18 +23,18 @@
     ```bash
     python setup.py build_ext --inplace
     ```
-3.  จะได้ไฟล์ `first_extension.pyd` (หรือ `.so` บน Linux) ในโฟลเดอร์เดียวกัน
+3.  จะได้ไฟล์ `PyCPBoost.pyd` (หรือ `.so` บน Linux) ในโฟลเดอร์เดียวกัน
 
 ## วิธีการใช้งาน (Python)
 
 ```python
-import first_extension
+import PyCPBoost
 
-print(first_extension.add(10, 20))
+print(PyCPBoost.add(10, 20))
 
-print(first_extension.multiply(5.5, 2.0))
+print(PyCPBoost.multiply(5.5, 2.0))
 
-result = first_extension.heavy_loop(10000000) 
+result = PyCPBoost.heavy_loop(10000000) 
 print(result)
 ```
 
